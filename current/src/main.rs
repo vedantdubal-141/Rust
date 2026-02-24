@@ -1,22 +1,11 @@
-// Topic: Functions
-
-// Program requirements:
-// * Displays your first and last name
-
-// Notes:
-// * Use a function to display your first name
-fn first_name() {
-    println!("first_name");
+fn sum(a:i32,b:i32 ) -> i32 {
+    return a+b;
 }
 
-// * Use a function to display your last name
-
-fn last_name(){
-    println!("last_name");
+fn d_result(result: i32){
+    println!("{}", result);
 }
 fn main() {
-    first_name();
-    last_name();
-
-
+    let result = sum(2,3);
+    d_result(result);
 }
