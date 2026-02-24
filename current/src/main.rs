@@ -1,9 +1,18 @@
+enum flavour{
+    Sparkling,
+    Sweet,
+    Fruity,
+}
+
+struct drink_flavour{
+    Ounce1 : i32,
+    Ounce2 : f32,
+
+
+}
+
+
 
 fn main() {
-    let mut i=1;
-    while i <=3 {
-    println!("{:?}",i);
-    i=i+1;
 
-    }
 }
