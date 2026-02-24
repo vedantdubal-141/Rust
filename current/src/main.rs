@@ -1,10 +1,12 @@
 fn main() {
-    let my_bool=false;
+    let a=8;
 
-    if my_bool == true {
-        println!("my true");
-    }else {
-        println!("my false");
+    if a>5 {
+        println!(">5");
+    }else if a==5 {
+        println!("=");
+    }else if a<5 {
+        println!("<");
     }
 
 }
