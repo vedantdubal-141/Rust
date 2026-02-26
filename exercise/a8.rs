@@ -17,7 +17,7 @@ enum Flavor {
 
 struct Drink {
     flavor: Flavor,
-    fluid_oz: f64,
+    fluid_oz: f64,  
 }
 fn print_drink(drink: Drink) {
     match drink.flavor {

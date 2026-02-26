@@ -1,26 +1,30 @@
-enum Flavour{
+use std::path::Component::Prefix;
+
+enum Flavor{
     Sparkling,
     Sweet,
-    Fruity,
+    Fruity
 }
 
-struct DrinkFlavour{
-    flavour: Flavour,
-    fluid_oz: f32,
+struct Drink {
+    flavor: Flavor,
+    fluid_oz:f32,
 }
-fn print_both(a:DrinkFlavour){
 
-    match a.flavour {
-        Flavour::Sparkling => println!("Sparkling"),
-        Flavour::Sweet => println!("Sweet"),
-        Flavour::Fruity => println!("Fruity"),
+fn print_drink(drink: Drink){
+    match drink.flavor {
+        Flavor::Sparkling => println!("Sparkling"),
+        Flavor::Sweet => println!("Sweet"),
+        Flavor::Fruity => println!("Fruit"),
+
     }
 
-    println!("{:?}", a.fluid_oz);
+    println!("oz:{:?}", drink.fluid_oz);
 }
 fn main() {
-    let sweet = DrinkFlavour {
-        flavour: Flavour::Sparkling,
-        fluid_oz: 12.0;
-    }
+ let sweet = Drink{
+     flavor: Flavor::Fruity,
+     fluid_oz: 0.6,
+ };
+
 }
